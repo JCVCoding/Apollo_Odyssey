@@ -34,9 +34,9 @@ async function startApolloServer() {
   });
   const { url } = await startStandaloneServer(server);
   console.log(`
-      🚀  Server is running!
-      📭  Query at ${url}
-    `);
+    🚀  Server is running!
+    📭  Query at ${url}
+  `);
 }
 
 startApolloServer();
