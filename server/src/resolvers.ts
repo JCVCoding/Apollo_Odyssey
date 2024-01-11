@@ -11,10 +11,14 @@ export const resolvers: Resolvers = {
       return dataSources.trackAPI.getTrack(id);
     },
   },
-  //   returns the Author based on the authorId
   Track: {
+    //   returns the Author based on the authorId
     author: ({ authorId }, _, { dataSources }) => {
       return dataSources.trackAPI.getAuthor(authorId);
+    },
+    // return the modules based on the id
+    modules: ({ id }, _, { dataSources }) => {
+      return dataSources.trackAPI.getTrackModules(id);
     },
   },
 };
